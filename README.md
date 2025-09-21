@@ -12,10 +12,3 @@ Expose with:
 ```bash
 npx ngrok http 3000
 ```
-
-## 🌐 Deploy
-- **Render / Railway / Heroku** supported  
-- Use environment variables:
-  - `PI_APP_ID=your_app_id`
-  - `PI_APP_SECRET=your_app_secret`
-  - `PUBLIC_URL=https://your-deployed-url.com`
