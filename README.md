@@ -18,4 +18,4 @@ npx ngrok http 3000
 - Use environment variables:
   - `PI_APP_ID=your_app_id`
   - `PI_APP_SECRET=your_app_secret`
-  - `PUBLIC_URL=https://your-deployed-url.com`
+  - `PUBLIC_URL=https://go-pi.onrender.com
