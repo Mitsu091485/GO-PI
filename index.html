@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GO PI - Testnet App</title>
+</head>
+<body>
+  <h1>🚀 GO PI</h1>
+  <p>Send and receive Pi payments on Testnet.</p>
+  <button id="payBtn">Pay 1π (Testnet)</button>
+
+  <script>
+    document.getElementById('payBtn').onclick = async () => {
+      const res = await fetch('/create-payment', { method: 'POST' });
+      const data = await res.json();
+      console.log('Payment created:', data);
+      alert('Payment request created! Check backend logs for callback.');
+    };
+  </script>
+</body>
+</html>
