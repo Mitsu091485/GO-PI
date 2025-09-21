@@ -1,6 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const PiBackend = require('pi-backend'); // adjust if actual package is pi-nodejs
+const PiBackend = require('pi-nodejs'); // switched to pi-nodejs from github
 
 const APP_ID = process.env.PI_APP_ID || 'YOUR_PI_APP_ID';
 const APP_SECRET = process.env.PI_APP_SECRET || 'YOUR_PI_APP_SECRET';
@@ -35,7 +35,7 @@ app.post('/pi/callback', (req, res) => {
 app.post('/create-payment', (req, res) => {
   const payment = {
     app_id: APP_ID,
-    user_id: "test-user-id", // replace with real user auth later
+    user_id: "test-user-id",
     amount: 1,
     memo: "GO PI test payment",
     callback_url: (process.env.PUBLIC_URL || "http://localhost:3000") + "/pi/callback"

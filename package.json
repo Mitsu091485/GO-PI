@@ -1,7 +1,7 @@
 {
   "name": "go-pi",
-  "version": "1.0.0",
-  "description": "GO PI - Pi Testnet demo app",
+  "version": "1.0.1",
+  "description": "GO PI - Pi Testnet demo app (fixed for Render)",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
@@ -9,6 +9,6 @@
   "dependencies": {
     "body-parser": "^1.20.2",
     "express": "^4.19.2",
-    "pi-backend": "^1.0.0"
+    "pi-nodejs": "github:pi-apps/pi-nodejs"
   }
 }
