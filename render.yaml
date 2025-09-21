@@ -3,7 +3,7 @@ version: "1"
 services:
 - type: web
   name: GO-PI
-  runtime: node
+  runtime: docker
   repo: https://github.com/Mitsu091485/GO-PI
   plan: free
   envVars:
