@@ -1,0 +1,12 @@
+# Exported from Render on 2025-09-21T06:32:10Z
+version: "1"
+services:
+- type: web
+  name: GO-PI
+  runtime: node
+  repo: https://github.com/Mitsu091485/GO-PI
+  plan: free
+  region: singapore
+  buildCommand: npm install
+  startCommand: node index.js
+  autoDeployTrigger: commit
