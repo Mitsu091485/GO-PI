@@ -10,3 +10,7 @@ services:
   buildCommand: npm install
   startCommand: node index.js
   autoDeployTrigger: commit
+npm install github:pi-apps/pi-nodejs#main
+const PiBackend = require('pi-nodejs').default;
+// or
+const { PiBackend } = require('pi-nodejs');
