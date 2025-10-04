@@ -10,11 +10,3 @@
     "body-parser": "^1.20.2",
     "express": "^4.19.2",
     "pi-nodejs": "github:pi-apps/pi-nodejs"
-  }
-}const PiNetwork = require('pi-backend');
-const apiKey = process.env.PI_API_KEY;
-const walletPrivateSeed = process.env.PI_WALLET_PRIVATE_SEED;
-rm -rf node_modules
-npm install
-const apiKey = process.env.PI_API_KEY;
-const walletPrivateSeed = process.env.PI_WALLET_PRIVATE_SEED;
